@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <title>ICT Club Candidate Verification</title>
+</head>
+<body>
+    <main>
+        <p>ICT CLUB</p>
+        <h1>Candidate Verification</h1>
+        <p>Enter your name to check whether you are on the club members list.</p>
+    
+        <form id="candidate-form">
+            <label for="first-name">First Name</label>
+            <input id="first-name" name="first-name" type="text" autocomplete="given-name" required>
+
+            <label for="last-name">Last Name</label>
+            <input id="last-name" name="last-name" type="text" autocomplete="family-name" required>
+
+            <button id="verify-button" type="submit">Check Membership</button>
+        </form>
+
+        <p id="result" role="status" aria-live="polite">Your result will appear here.</p>
+    </main>
+
+    <script type="py" src="./main.py"></script>
+
+    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/70LcF31zb1H0PyJoS1Sx1r?utm_source=generator&si=56d4e6fd1fdc44b0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</body>
+</html>
